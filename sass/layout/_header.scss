@@ -1,0 +1,80 @@
+.header {
+    min-height: 70rem;
+    padding-top: 73px;
+
+    background-image: url(../../images/herro.img.1.png), url(../../images/herro.img.2.png);
+    background-repeat: no-repeat;
+    background-size: 10rem 20rem, 35.8rem 10rem;
+    background-position: 0 50%, right 16.5rem bottom 0%;
+
+}
+
+.nav {
+    @extend %flexCenter;
+
+    &__logo {
+        margin-right: 8rem;
+    }
+
+}
+
+.list {
+    display: flex;
+    list-style: none;
+
+    &--last {
+        margin-top: 2.5rem;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #FFFFFF;
+    }
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+        margin-top: 13.3rem;
+        font-weight: bold;
+        font-size: 10rem;
+        line-height: 10rem;
+        color: #FFFFFF;
+        width: 55rem;
+    }
+
+    &__span {
+        color: #F67E7E;
+    }
+
+    &__line {
+        width: 5rem;
+        height: 4px;
+        background: #79C8C7;
+    }
+
+    &__line--last {
+        background: #F67E7E;
+    }
+
+    &__text {
+        margin-top: 7.9rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        width: 44.5rem;
+    }
+}

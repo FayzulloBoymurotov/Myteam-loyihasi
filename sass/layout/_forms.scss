@@ -1,0 +1,29 @@
+.btn {
+
+    &--top:hover {
+        background-color: $color-white;
+        color: $color-midnight-green;
+    }
+
+    &--top:active {
+        background-color: $color-midnight-green;
+        color: rgba(255, 255, 255, .6);
+        border: 2px solid #2C6269;
+    }
+
+    &--bottom:hover {
+        background: #79C8C7;
+    }
+
+    &--bottom:active {
+        background: rgba(128, 142, 155, .2);
+    }
+
+    &__images:hover {
+        background: #F67E7E;
+    }
+}
+
+.list__link:hover {
+    color: #F67E7E;
+}

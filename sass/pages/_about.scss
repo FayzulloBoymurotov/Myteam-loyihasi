@@ -1,0 +1,93 @@
+.main {
+    width: 100%;
+    height: 68.4rem;
+    background: #012F34;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-left {
+        margin-top: 14rem;
+        justify-content: space-between;
+    }
+
+    &-rights {
+        display: flex;
+        align-items: center;
+    }
+
+    &-rights--gold {
+        margin-top: 19.8rem;
+    }
+
+    &-rights::before {
+        content: "";
+        display: inline-block;
+        width: 7.2rem;
+        height: 7.2rem;
+        background-image: url(../../images/main-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 2.3rem;
+    }
+
+    &-rights--gold2::before {
+        content: "";
+        display: inline-block;
+        width: 7.2rem;
+        height: 7.2rem;
+        background-image: url(../../images/main-2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 2.3rem;
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    &-rights--gold3::before {
+        content: "";
+        display: inline-block;
+        width: 7.2rem;
+        height: 7.2rem;
+        background-image: url(../../images/77777.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 2.3rem;
+    }
+
+    &__right {
+        font-size: 18px;
+        line-height: 28px;
+        color: #F67E7E;
+    }
+
+    &-right-2 {
+        width: 445px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin-top: 1.6rem;
+    }
+
+    &-heading {
+        width: 44.5rem;
+        margin-top: 5.4rem;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+
+}
+
+.main {
+    background-image: url(../../images/main-right.png);
+    background-repeat: no-repeat;
+    background-size: 10rem 24.4rem;
+    background-position: right 0 bottom 0;
+}
