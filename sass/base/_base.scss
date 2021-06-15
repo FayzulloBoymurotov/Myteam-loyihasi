@@ -26,6 +26,11 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include respond(tablets) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .container-small {

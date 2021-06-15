@@ -3,10 +3,15 @@
     height: 19.6rem;
     background: #002529;
 
+    @include respond(tablets) {
+        height: 27.1rem;
+    }
+
     &-top {
         display: flex;
         justify-content: space-between;
         padding-top: 4.8rem;
+
     }
 
     &__item {
@@ -15,6 +20,21 @@
 
     &-second {
         margin-right: 22rem;
+
+        @include respond(tablets) {
+            width: 28rem;
+            text-align: right;
+            margin-right: 0;
+            position: relative;
+        }
+    }
+
+    &-flash {
+        @include respond(tablets) {
+            position: absolute;
+            right: -25.8rem;
+            top: 0;
+        }
     }
 
     &__link {
@@ -25,6 +45,13 @@
         color: rgba(255, 255, 255, .6);
         mix-blend-mode: normal;
         list-style: none;
+    }
+
+    &__gold {
+        @include respond(tablets) {
+            width: 9.5rem;
+            height: 2.4rem;
+        }
     }
 
     &__images {
@@ -39,6 +66,10 @@
         text-decoration: none;
         list-style: none;
         padding-top: 5.1rem;
+
+        @include respond(tablets) {
+            padding-top: 15.1rem;
+        }
     }
 
     &-back {
@@ -49,10 +80,24 @@
         text-align: right;
         color: rgba(255, 255, 255, .6);
         mix-blend-mode: normal;
+
+    }
+
+    &-img {
+        @include respond(tablets) {
+            position: relative;
+        }
     }
 
     &-head {
         text-align: right;
+
+        @include respond(tablets) {
+            position: absolute;
+            left: -425px;
+            bottom: -5px;
+        }
+
     }
 
 }

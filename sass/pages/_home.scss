@@ -3,11 +3,17 @@
     height: 20rem;
     background: #F67E7E;
 
+    background-image: url(../../images/789.png);
+    background-repeat: no-repeat;
+    background-size: 20rem 11.5rem;
+    background-position: bottom 0 left 0;
+
     &-top {
         display: flex;
         align-items: center;
         padding-top: 7.6rem;
         padding-bottom: 7.6rem;
+
     }
 
     &__heading {
@@ -15,13 +21,12 @@
         font-size: 48px;
         line-height: 48px;
         color: #012F34;
+
+        @include respond(tablets) {
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-left: 8rem;
+        }
     }
 
-}
-
-.start {
-    background-image: url(../../images/789.png);
-    background-repeat: no-repeat;
-    background-size: 20rem 12.2rem;
-    background-position: bottom 0 left 0;
 }

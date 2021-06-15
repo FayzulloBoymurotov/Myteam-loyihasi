@@ -13,6 +13,37 @@
   background-size: contain;
 }
 
+// MEDIA QUERY MANAGER
+
+@mixin respond ($breakpoint) {
+  @if ($breakpoint=phones) {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint=tablets) {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint=laptops) {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint=big-screens) {
+    @media only screen and (min-width: 1920px) {
+      @content;
+    }
+  }
+
+
+}
+
+
 %flexCenter {
   display: flex;
   align-items: center;
