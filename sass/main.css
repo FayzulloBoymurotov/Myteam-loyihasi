@@ -509,6 +509,10 @@ template {
   }
 }
 
+.header--block2 {
+  min-height: 51.7rem;
+}
+
 .nav__logo {
   margin-right: 8rem;
 }
@@ -1195,6 +1199,14 @@ template {
   color: #F67E7E;
 }
 
+.meet__list:hover {
+  background-color: #79C8C7;
+}
+
+.meet__tablet:hover {
+  background: #F67E7E;
+}
+
 .start {
   width: 100%;
   height: 20rem;
@@ -1253,6 +1265,37 @@ template {
     line-height: 3rem;
     margin-left: 8rem;
   }
+}
+
+.class {
+  width: 100%;
+  height: 43.7rem;
+  background: #012F34;
+  background-image: url(../../images/98.png);
+  background-size: 20rem 20rem;
+  background-repeat: no-repeat;
+}
+
+.class-top {
+  margin-top: 6.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.class__heading {
+  margin-top: 14rem;
+}
+
+.class__img {
+  margin-right: 8rem;
+}
+
+.class__img:last-child {
+  margin-right: 0;
 }
 
 .main {
@@ -1512,22 +1555,107 @@ template {
 .meet {
   background: #004047;
   width: 100%;
-  height: 10002px;
+  height: 1002px;
+  background-image: url(../../images/1.png), url(../../images/2.png);
+  background-size: 10rem 20rem, 14.7rem 10rem;
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
 }
 
-.meet-mini-card::before {
+.meet-part--1::before {
   content: "";
   display: inline-block;
   width: 9.6rem;
   height: 9.6rem;
+  background-size: contain;
   background-image: url(../../images/page1.png);
-  background-repeat: no-repeat;
-  background-size: 9.6rem 9.6rem;
   margin-bottom: 1.6rem;
   margin-left: 9.9rem;
 }
 
+.meet-part--2::before {
+  content: "";
+  display: inline-block;
+  width: 9.6rem;
+  height: 9.6rem;
+  background-size: contain;
+  background-image: url(../../images/page2.png);
+  margin-bottom: 1.6rem;
+  margin-left: 9.9rem;
+}
+
+.meet-part--3::before {
+  content: "";
+  display: inline-block;
+  width: 9.6rem;
+  height: 9.6rem;
+  background-size: contain;
+  background-image: url(../../images/page3.png);
+  margin-bottom: 1.6rem;
+  margin-left: 9.9rem;
+}
+
+.meet-repos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.meet__tablet {
+  list-style: none;
+}
+
+.meet-part--4::before {
+  content: "";
+  display: inline-block;
+  width: 9.6rem;
+  height: 9.6rem;
+  background-size: contain;
+  background-image: url(../../images/page4.png);
+  margin-bottom: 1.6rem;
+  margin-left: 9.9rem;
+}
+
+.meet-part--5::before {
+  content: "";
+  display: inline-block;
+  width: 9.6rem;
+  height: 9.6rem;
+  background-size: contain;
+  background-image: url(../../images/page5.png);
+  margin-bottom: 1.6rem;
+  margin-left: 9.9rem;
+}
+
+.meet-part--6 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
 .meet-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.meet-part {
   margin-top: 6.4rem;
   width: 35rem;
   height: 25.3rem;
@@ -1539,10 +1667,55 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
   text-align: center;
   color: #FFFFFF;
+  padding-top: 14rem;
+}
+
+.meet-ul {
+  position: relative;
+}
+
+.meet__list {
+  list-style: none;
+  width: 5.6rem;
+  height: 5.6rem;
+  left: calc(50% - 56px/2);
+  top: calc(50% - 56px/2 + 112.5px);
+  background: #F67E7E;
+  border-radius: 50%;
+  padding-right: 3px;
+  padding-top: 2px;
+  position: absolute;
+  top: 2.5rem;
+}
+
+.meet__list--last {
+  position: absolute;
+  top: 5.7rem;
+}
+
+.meet__plus {
+  text-decoration: none;
+  font-size: 4.3rem;
+  line-height: 7.9rem;
+  left: calc(50% - 4px/2 + 10px);
+  top: calc(50% - 16px/2 + 118.5px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meet__repo1 {
+  margin-right: 1.6rem;
 }
 
 .new {
@@ -1745,6 +1918,14 @@ template {
   .new__content {
     margin-top: 1.6rem;
   }
+}
+
+.new__name2--meet9 {
+  width: 20rem;
+  margin-top: 8px;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  line-height: 2.9rem;
 }
 
 .new-heading {
