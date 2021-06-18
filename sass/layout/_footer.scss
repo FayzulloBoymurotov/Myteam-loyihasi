@@ -73,14 +73,13 @@
     }
 
     &-back {
+        width: 31rem;
         text-decoration: none;
         font-weight: 600;
         font-size: 15px;
-        line-height: 25px;
         text-align: right;
         color: rgba(255, 255, 255, .6);
         mix-blend-mode: normal;
-
     }
 
     &-img {
@@ -94,7 +93,7 @@
         @include respond(tablets) {
             position: absolute;
             left: -42.4rem;
-            bottom: 5px;
+            top: 10px;
         }
 
     }
@@ -104,8 +103,8 @@
 
         @include respond(tablets) {
             position: absolute;
-            left: -42.4rem;
-            bottom: 5px;
+            left: -428px;
+            top: 143px;
         }
 
     }
