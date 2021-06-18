@@ -142,13 +142,15 @@
         height: 9.6rem;
         background-size: contain;
         background-image: url(../../images/page1.png);
-        margin-bottom: 1.6rem;
-        margin-left: 9.9rem;
         background-repeat: no-repeat;
 
-        @include respond(tablets) {
-            margin-left: 6.9rem;
-        }
+    }
+
+    &-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     &-part--1 {
@@ -164,8 +166,6 @@
         height: 9.6rem;
         background-size: contain;
         background-image: url(../../images/page2.png);
-        margin-bottom: 1.6rem;
-        margin-left: 9.9rem;
         background-repeat: no-repeat;
 
         @include respond(tablets) {
@@ -181,8 +181,6 @@
         height: 9.6rem;
         background-size: contain;
         background-image: url(../../images/page3.png);
-        margin-bottom: 1.6rem;
-        margin-left: 9.9rem;
         background-repeat: no-repeat;
 
         @include respond(tablets) {
@@ -211,8 +209,6 @@
         height: 9.6rem;
         background-size: contain;
         background-image: url(../../images/page4.png);
-        margin-bottom: 1.6rem;
-        margin-left: 9.9rem;
         background-repeat: no-repeat;
 
         @include respond(tablets) {
@@ -228,8 +224,6 @@
         height: 9.6rem;
         background-size: contain;
         background-image: url(../../images/page5.png);
-        margin-bottom: 1.6rem;
-        margin-left: 9.9rem;
         background-repeat: no-repeat;
 
         @include respond(tablets) {
@@ -321,7 +315,7 @@
 
     &__list--last {
         position: absolute;
-        top: 7.7rem;
+        top: 5.3rem;
         transform: rotate(89deg);
     }
 
@@ -335,6 +329,8 @@
         text-align: center;
         display: flex;
         align-items: center;
+        color: #002529;
+        font-weight: bold;
     }
 
     &__plus--tareta {

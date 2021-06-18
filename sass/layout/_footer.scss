@@ -11,15 +11,20 @@
         display: flex;
         justify-content: space-between;
         padding-top: 4.8rem;
+    }
 
+    &-record {
+        display: flex;
+        align-items: center;
     }
 
     &__item {
         list-style: none;
     }
 
+
     &-second {
-        margin-right: 22rem;
+        margin-left: 12.5rem;
 
         @include respond(tablets) {
             width: 28rem;
@@ -89,6 +94,7 @@
     }
 
     &-head {
+        text-align: right;
 
         @include respond(tablets) {
             position: absolute;
