@@ -1255,32 +1255,32 @@ template {
 @media only screen and (max-width: 600px) {
   .footer-head {
     position: absolute;
-    left: -42.4rem;
-    top: 10px;
+    left: -428px;
+    top: 144px;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .footer-head {
     position: absolute;
-    left: -42.4rem;
-    top: 10px;
+    left: -428px;
+    top: 144px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .footer-head {
     position: absolute;
-    left: -42.4rem;
-    top: 10px;
+    left: -428px;
+    top: 144px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .footer-head {
     position: absolute;
-    left: -42.4rem;
-    top: 10px;
+    left: -428px;
+    top: 144px;
   }
 }
 
@@ -1292,7 +1292,7 @@ template {
   .footer-head--test {
     position: absolute;
     left: -428px;
-    top: 143px;
+    top: 144px;
   }
 }
 
@@ -1300,7 +1300,7 @@ template {
   .footer-head--test {
     position: absolute;
     left: -428px;
-    top: 143px;
+    top: 144px;
   }
 }
 
@@ -1308,7 +1308,7 @@ template {
   .footer-head--test {
     position: absolute;
     left: -428px;
-    top: 143px;
+    top: 144px;
   }
 }
 
@@ -1316,7 +1316,7 @@ template {
   .footer-head--test {
     position: absolute;
     left: -428px;
-    top: 143px;
+    top: 144px;
   }
 }
 
@@ -2422,7 +2422,6 @@ template {
   top: 7.7rem;
   -webkit-transform: rotate(89deg);
           transform: rotate(89deg);
-  background: #002529;
 }
 
 .meet__plus {
@@ -2440,7 +2439,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #002529;
 }
 
 .meet__plus--tareta {

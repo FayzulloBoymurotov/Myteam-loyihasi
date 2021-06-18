@@ -92,8 +92,8 @@
 
         @include respond(tablets) {
             position: absolute;
-            left: -42.4rem;
-            top: 10px;
+            left: -428px;
+            top: 144px;
         }
 
     }
@@ -104,7 +104,7 @@
         @include respond(tablets) {
             position: absolute;
             left: -428px;
-            top: 143px;
+            top: 144px;
         }
 
     }
