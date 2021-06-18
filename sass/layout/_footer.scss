@@ -90,12 +90,22 @@
     }
 
     &-head {
+
+        @include respond(tablets) {
+            position: absolute;
+            left: -42.4rem;
+            bottom: 5px;
+        }
+
+    }
+
+    &-head--test {
         text-align: right;
 
         @include respond(tablets) {
             position: absolute;
-            left: -425px;
-            bottom: -5px;
+            left: -42.4rem;
+            bottom: 5px;
         }
 
     }

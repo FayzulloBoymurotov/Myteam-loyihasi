@@ -1259,32 +1259,32 @@ template {
 @media only screen and (max-width: 600px) {
   .footer-head {
     position: absolute;
-    left: -425px;
-    bottom: -5px;
+    left: -427px;
+    bottom: 0;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .footer-head {
     position: absolute;
-    left: -425px;
-    bottom: -5px;
+    left: -427px;
+    bottom: 0;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .footer-head {
     position: absolute;
-    left: -425px;
-    bottom: -5px;
+    left: -427px;
+    bottom: 0;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .footer-head {
     position: absolute;
-    left: -425px;
-    bottom: -5px;
+    left: -427px;
+    bottom: 0;
   }
 }
 
