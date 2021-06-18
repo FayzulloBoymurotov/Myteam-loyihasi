@@ -696,9 +696,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
@@ -769,8 +766,12 @@ template {
   margin-top: 12rem;
 }
 
-.heading__left {
+.heading-section {
   margin-top: 13.3rem;
+  margin-top: 0;
+}
+
+.heading__left {
   font-weight: bold;
   font-size: 10rem;
   line-height: 10rem;
@@ -819,7 +820,6 @@ template {
 }
 
 .heading__left--touch {
-  margin-top: 0;
   font-size: 64px;
   line-height: 100px;
   color: #FFFFFF;

@@ -12,7 +12,7 @@
     background-position: 0 50%, right 16.5rem bottom 0%;
 
 
-    @include respond (tablets) {
+    @include respond(tablets) {
         height: 55.6rem;
     }
 
@@ -20,7 +20,7 @@
         background-image: none, url(../../images/herro.img.2.png);
     }
 
-    @include respond (tablets) {
+    @include respond(tablets) {
         background-image: none, url(../../images/herro.img.2.png);
         background-position: center bottom;
     }
@@ -94,7 +94,6 @@
 .heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
 
     @include respond(tablets) {
@@ -108,8 +107,13 @@
         margin-top: 12rem;
     }
 
-    &__left {
+    &-section {
         margin-top: 13.3rem;
+        margin-top: 0;
+
+    }
+
+    &__left {
         font-weight: bold;
         font-size: 10rem;
         line-height: 10rem;
@@ -126,12 +130,11 @@
     }
 
     &__left--touch {
-        margin-top: 0;
         font-size: 64px;
         line-height: 100px;
         color: #FFFFFF;
 
-        @include respond (tablets) {
+        @include respond(tablets) {
             font-weight: bold;
             font-size: 64px;
             line-height: 56px;
