@@ -131,6 +131,10 @@
     background-repeat: no-repeat;
     background-position: left top, right bottom;
 
+    @include respond(tablets) {
+        height: 1219px;
+    }
+
     &-part--1::before {
         content: "";
         display: inline-block;
@@ -140,6 +144,17 @@
         background-image: url(../../images/page1.png);
         margin-bottom: 1.6rem;
         margin-left: 9.9rem;
+        background-repeat: no-repeat;
+
+        @include respond(tablets) {
+            margin-left: 6.9rem;
+        }
+    }
+
+    &-part--1 {
+        @include respond(tablets) {
+            margin-right: 1.1rem;
+        }
     }
 
     &-part--2::before {
@@ -151,6 +166,11 @@
         background-image: url(../../images/page2.png);
         margin-bottom: 1.6rem;
         margin-left: 9.9rem;
+        background-repeat: no-repeat;
+
+        @include respond(tablets) {
+            margin-left: 7.3rem;
+        }
     }
 
 
@@ -163,8 +183,18 @@
         background-image: url(../../images/page3.png);
         margin-bottom: 1.6rem;
         margin-left: 9.9rem;
+        background-repeat: no-repeat;
+
+        @include respond(tablets) {
+            margin-left: 7.3rem;
+        }
     }
 
+    &-part--3 {
+        @include respond(tablets) {
+            margin-right: 1.1rem;
+        }
+    }
 
     &-repos {
         display: flex;
@@ -183,6 +213,11 @@
         background-image: url(../../images/page4.png);
         margin-bottom: 1.6rem;
         margin-left: 9.9rem;
+        background-repeat: no-repeat;
+
+        @include respond(tablets) {
+            margin-left: 7.3rem;
+        }
     }
 
 
@@ -195,7 +230,19 @@
         background-image: url(../../images/page5.png);
         margin-bottom: 1.6rem;
         margin-left: 9.9rem;
+        background-repeat: no-repeat;
+
+        @include respond(tablets) {
+            margin-left: 7.3rem;
+        }
     }
+
+    &-part--5 {
+        @include respond(tablets) {
+            margin-right: 1.1rem;
+        }
+    }
+
 
     &-part--6 {
         flex-direction: column;
@@ -204,11 +251,19 @@
         position: relative;
     }
 
+
     &-card {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include respond(tablets) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
 
     &-part {
@@ -217,6 +272,15 @@
         height: 25.3rem;
         background: $color-green-34;
         padding: 3rem 2.4rem 5.6rem 2.4rem;
+
+        @include respond(tablets) {
+            width: 28.1rem;
+            height: 25.3rem;
+        }
+    }
+
+    &-part--6 {
+        background: #002529;
     }
 
     &-heading {
@@ -226,6 +290,15 @@
         text-align: center;
         color: #FFFFFF;
         padding-top: 14rem;
+
+        @include respond(tablets) {
+            font-size: 32px;
+            line-height: 32px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            padding-top: 10rem;
+        }
     }
 
     &-ul {
@@ -248,21 +321,38 @@
 
     &__list--last {
         position: absolute;
-        top: 5.7rem;
+        top: 7.7rem;
+        transform: rotate(89deg);
+
     }
 
     &__plus {
         text-decoration: none;
-        font-size: 4.3rem;
-        line-height: 7.9rem;
+        font-size: 3.1rem;
+        line-height: 8.6rem;
         left: calc(50% - 4px/2 + 10px);
         top: calc(50% - 16px/2 + 118.5px);
-        // color: #012F34;
         transform: rotate(90deg);
         text-align: center;
         display: flex;
         align-items: center;
     }
+
+    &__plus--tareta {
+        font-weight: bold;
+        width: 58.6px;
+        height: 98.6px;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        left: calc(50% - 4px/2 + 10px);
+        top: calc(50% - 16px/2 + 118.5px);
+        transform: rotate(90deg);
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+    }
+
 
     &__repo1 {
         margin-right: 1.6rem;

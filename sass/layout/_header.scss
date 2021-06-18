@@ -12,6 +12,10 @@
     background-position: 0 50%, right 16.5rem bottom 0%;
 
 
+    @include respond (tablets) {
+        height: 55.6rem;
+    }
+
     @media only screen and (max-width: 900px) {
         background-image: none, url(../../images/herro.img.2.png);
     }
@@ -128,6 +132,12 @@
         font-size: 64px;
         line-height: 100px;
         color: #FFFFFF;
+
+        @include respond (tablets) {
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 56px;
+        }
     }
 
     &__span {
@@ -150,6 +160,10 @@
 
     &__line--red {
         background: #F67E7E;
+
+        @include respond(tablets) {
+            display: none;
+        }
     }
 
 
@@ -180,6 +194,13 @@
         font-size: 1.8rem;
         line-height: 2.8rem;
         color: #FFFFFF;
+
+        @include respond(tablets) {
+            width: 45.7rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 2.8rem;
+        }
     }
 }
 
