@@ -1283,52 +1283,64 @@ template {
 @media only screen and (max-width: 600px) {
   .footer-backs--git {
     position: relative;
+    right: 0;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .footer-backs--git {
     position: relative;
+    right: 0;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .footer-backs--git {
     position: relative;
+    right: 0;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .footer-backs--git {
     position: relative;
+    right: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .footer-back--turk {
     position: absolute;
-    right: 11.8rem;
+    right: 0rem;
+    margin-top: 157px;
+    width: 26rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .footer-back--turk {
     position: absolute;
-    right: 11.8rem;
+    right: 0rem;
+    margin-top: 157px;
+    width: 26rem;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .footer-back--turk {
     position: absolute;
-    right: 11.8rem;
+    right: 0rem;
+    margin-top: 157px;
+    width: 26rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .footer-back--turk {
     position: absolute;
-    right: 11.8rem;
+    right: 0rem;
+    margin-top: 157px;
+    width: 26rem;
   }
 }
 
@@ -1368,7 +1380,6 @@ template {
   font-size: 15px;
   text-align: right;
   color: rgba(255, 255, 255, 0.6);
-  mix-blend-mode: normal;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1402,7 +1413,7 @@ template {
 @media only screen and (max-width: 600px) {
   .footer-head {
     position: absolute;
-    left: -542px;
+    left: -682px;
     top: 160px;
   }
 }
@@ -1410,7 +1421,7 @@ template {
 @media only screen and (max-width: 900px) {
   .footer-head {
     position: absolute;
-    left: -542px;
+    left: -682px;
     top: 160px;
   }
 }
@@ -1418,7 +1429,7 @@ template {
 @media only screen and (max-width: 1200px) {
   .footer-head {
     position: absolute;
-    left: -542px;
+    left: -682px;
     top: 160px;
   }
 }
@@ -1426,9 +1437,13 @@ template {
 @media only screen and (min-width: 1920px) {
   .footer-head {
     position: absolute;
-    left: -542px;
+    left: -682px;
     top: 160px;
   }
+}
+
+.footer-head--9 {
+  margin-bottom: 55px;
 }
 
 .footer-head--test {
@@ -1465,6 +1480,10 @@ template {
     left: -428px;
     top: 144px;
   }
+}
+
+.footer .container {
+  position: relative;
 }
 
 .btn--top:hover {
@@ -1928,7 +1947,7 @@ template {
   display: inline-block;
   width: 7.2rem;
   height: 7.2rem;
-  background-image: url(../../images/main-1.png);
+  background-image: url("../../images/main-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 2.3rem;
