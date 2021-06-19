@@ -143,7 +143,6 @@
         background-size: contain;
         background-image: url(../../images/page1.png);
         background-repeat: no-repeat;
-
     }
 
     &-part {
@@ -153,11 +152,6 @@
         flex-direction: column;
     }
 
-    &-part--1 {
-        @include respond(tablets) {
-            margin-right: 1.1rem;
-        }
-    }
 
     &-part--2::before {
         content: "";
@@ -168,9 +162,6 @@
         background-image: url(../../images/page2.png);
         background-repeat: no-repeat;
 
-        @include respond(tablets) {
-            margin-left: 7.3rem;
-        }
     }
 
 
@@ -183,15 +174,6 @@
         background-image: url(../../images/page3.png);
         background-repeat: no-repeat;
 
-        @include respond(tablets) {
-            margin-left: 7.3rem;
-        }
-    }
-
-    &-part--3 {
-        @include respond(tablets) {
-            margin-right: 1.1rem;
-        }
     }
 
     &-repos {
@@ -211,9 +193,6 @@
         background-image: url(../../images/page4.png);
         background-repeat: no-repeat;
 
-        @include respond(tablets) {
-            margin-left: 7.3rem;
-        }
     }
 
 
@@ -225,10 +204,6 @@
         background-size: contain;
         background-image: url(../../images/page5.png);
         background-repeat: no-repeat;
-
-        @include respond(tablets) {
-            margin-left: 7.3rem;
-        }
     }
 
     &-part--5 {

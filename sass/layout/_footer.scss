@@ -22,6 +22,12 @@
         list-style: none;
     }
 
+    &-first {
+        @include respond(tablets) {
+            margin-bottom: 7rem;
+        }
+    }
+
 
     &-second {
         margin-left: 12.5rem;
@@ -37,8 +43,8 @@
     &-flash {
         @include respond(tablets) {
             position: absolute;
-            right: -25.8rem;
-            top: 0;
+            right: -13.8rem;
+            top: -96px;
         }
     }
 
@@ -78,13 +84,13 @@
     }
 
     &-back {
-        width: 31rem;
         text-decoration: none;
         font-weight: 600;
         font-size: 15px;
         text-align: right;
         color: rgba(255, 255, 255, .6);
         mix-blend-mode: normal;
+
     }
 
     &-img {
@@ -98,8 +104,8 @@
 
         @include respond(tablets) {
             position: absolute;
-            left: -428px;
-            top: 144px;
+            left: -542px;
+            top: 160px;
         }
 
     }
