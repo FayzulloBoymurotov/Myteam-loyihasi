@@ -135,6 +135,12 @@
         height: 1219px;
     }
 
+    &-part--1 {
+        @include respond(tablets) {
+            margin-right: 1.1rem;
+        }
+    }
+
     &-part--1::before {
         content: "";
         display: inline-block;
@@ -143,6 +149,7 @@
         background-size: contain;
         background-image: url(../../images/page1.png);
         background-repeat: no-repeat;
+
     }
 
     &-part {
@@ -151,6 +158,7 @@
         justify-content: center;
         flex-direction: column;
     }
+
 
 
     &-part--2::before {
@@ -162,6 +170,12 @@
         background-image: url(../../images/page2.png);
         background-repeat: no-repeat;
 
+    }
+
+    &-part--3 {
+        @include respond(tablets) {
+            margin-right: 1.1rem;
+        }
     }
 
 
@@ -193,6 +207,12 @@
         background-image: url(../../images/page4.png);
         background-repeat: no-repeat;
 
+    }
+
+    &-part--5 {
+        @include respond(tablets) {
+            margin-right: 1.1rem;
+        }
     }
 
 

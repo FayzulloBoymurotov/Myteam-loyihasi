@@ -95,7 +95,6 @@
     display: flex;
     align-items: center;
 
-
     @include respond(tablets) {
         flex-direction: column;
         justify-content: center;
@@ -111,6 +110,11 @@
         margin-top: 13.3rem;
         margin-top: 0;
 
+    }
+
+    &--dont {
+        margin-top: 12.9rem;
+        justify-content: space-between;
     }
 
     &__left {

@@ -62,6 +62,9 @@
         @include respond(tablets) {
             width: 9.5rem;
             height: 2.4rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
     }
 
@@ -71,6 +74,22 @@
 
     &__images--dark {
         margin-left: 0;
+    }
+
+    &-backs--git {
+        width: 26rem;
+
+        @include respond(tablets) {
+            position: relative;
+        }
+
+    }
+
+    &-back--turk {
+        @include respond(tablets) {
+            position: absolute;
+            right: 11.8rem;
+        }
     }
 
     &-backs {
